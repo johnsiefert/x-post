@@ -28,16 +28,19 @@ function reviewInput() {
 
 onValue(postInDB, function (snapshot) {
   if (snapshot.exists()) {
+
     let dataArray = Object.entries(snapshot.val());
+
     clearPost()
-    dataArray.forEach((data) => {
+
+    dataArray.reverse().forEach((data) => {
       let currentItem = data;
       let currentItemID = currentItem[0];
       let currentItemValue = currentItem[1];
       appendItem(currentItem);
     });
   } else {
-    post.innerHTML = 'No posts here...yet';
+    post.innerHTML = '- (X) Posts -';
   }
 });
 
@@ -46,7 +49,7 @@ function clearInput() {
 }
 
 function clearPost() {
-    post.innerHTML += ""
+    post.innerHTML = ""
 }
 
 function appendItem(item) {

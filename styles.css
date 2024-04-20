@@ -33,7 +33,15 @@ h1 {
   width: 150px;
   margin: 0 auto;
 } */
-
+.input-name {
+  display: flex;
+  color: #8f8f8f;
+  background-color: #444059;
+  font-size: 16px;
+  font-family: 'Rubik', sans-serif;
+  border: none;
+  border-radius: 5px;
+}
 #text {
   margin: 1px;
   padding: 5px;
@@ -66,9 +74,8 @@ ul {
   flex-wrap: wrap;
   list-style: none;
   gap: 10px;
- margin: 0;
- width: 100%;
-
+  margin: 0;
+  width: 100%;
 }
 
 ul li {
