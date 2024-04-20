@@ -46,7 +46,7 @@ function clearInput() {
 }
 
 function clearPost() {
-    post.innerHTML = ""
+    post.innerHTML += ""
 }
 
 function appendItem(item) {
