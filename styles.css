@@ -14,6 +14,7 @@ h1 {
 }
 
 #container {
+  display: flex;
   max-width: 320px;
   display: flex;
   margin: 30px auto;
@@ -33,7 +34,17 @@ h1 {
   width: 150px;
   margin: 0 auto;
 } */
-.input-name {
+
+#input {
+  display: flex;
+  font-family: 'Rubik', sans-serif;
+  border: none;
+  border-radius: 5px;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.input {
   display: flex;
   color: #8f8f8f;
   background-color: #444059;
@@ -41,7 +52,11 @@ h1 {
   font-family: 'Rubik', sans-serif;
   border: none;
   border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
 }
+
 #text {
   margin: 1px;
   padding: 5px;
@@ -78,7 +93,15 @@ ul {
   width: 100%;
 }
 
-ul li {
+.bold {
+        font-weight: bold;
+}
+div {
+    padding: 0;
+    margin: 10px;
+}
+
+ul li  {
   flex-grow: 1;
   padding: 15px;
   background-color: #ffffff;
